@@ -1,55 +1,55 @@
 var main = function(){
 
 /* .about */
-	$('.about').mouseenter(function(){
+	$('.about').hover(function(){
 		$(this).stop(true,true).animate({ "right":"+=10px", "bottom":"+=10px", "opacity":".75"}, 300);
-	});
-	$('.about').mouseleave(function(){
+	}, function(){
 		$(this).stop(true,true).animate({ "right":"-=10px", "bottom":"-=10px", "opacity":"1"}, 400)
 	});
 
+	$('.about').click(function(){
+		$(this).stop(true,true).animate({ "right":"-=10px", "bottom":"-=10px", "opacity":"1"}, 400)
+	});
+
+
 /* .projects */
-	$('.projects').mouseenter(function(){
+	$('.projects').hover(function(){
 		$(this).stop(true,true).animate({ "left":"+=10px", "bottom":"+=10px", "opacity":".75"}, 300);
 
-	});
-	$('.projects').mouseleave(function(){
+	}, function(){
 		$(this).stop(true,true).animate({ "left":"-=10px", "bottom":"-=10px", "opacity":"1"}, 400)
 	});
 
+	$('.projects').click(function(){
+		$(this).stop(true,true).animate({ "left":"-=10px", "bottom":"-=10px", "opacity":"1"}, 400)
+	});
+
+
 /* .resume */
-	$('.resume').mouseenter(function(){
+	$('.resume').hover(function(){
 		$(this).stop(true,true).animate({ "right":"+=10px", "top":"+=10px", "opacity":".75"}, 300);
 
-	});
-	$('.resume').mouseleave(function(){
+	}, function(){
 		$(this).stop(true,true).animate({ "right":"-=10px", "top":"-=10px", "opacity":"1"}, 400)
 	});
 
+	$('.resume').click(function(){
+		$(this).stop(true,true).animate({ "right":"-=10px", "top":"-=10px", "opacity":"1"}, 400)
+	});		
+
+
+
 /* .contact */
-	$('.contact').mouseenter(function(){
+	$('.contact').hover(function(){
 		$(this).stop(true,true).animate({ "left":"+=10px", "top":"+=10px", "opacity":".75"}, 300);
 
-	});
-	$('.contact').mouseleave(function(){
+	}, function(){
 		$(this).stop(true,true).animate({ "left":"-=10px", "top":"-=10px", "opacity":"1"}, 400)
 	});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	$('.contact').click(function(){
+		$(this).stop(true,true).animate({ "left":"-=10px", "top":"-=10px", "opacity":"1"}, 400)
+	});		
 
 };
 

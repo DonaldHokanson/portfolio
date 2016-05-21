@@ -1,7 +1,7 @@
 @import 'bootstrap';
 
 body{
-	background: #fff;
+	background: url("darkwood.jpg")
 }
 
 /* Jumbotron */
@@ -9,6 +9,8 @@ body{
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	color: #398ccc;
+	background: #eee;
 }
 
 .home{
