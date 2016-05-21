@@ -7,4 +7,10 @@ class PagesController < ApplicationController
 
   def projects
   end
+
+  def resume
+  end
+
+  def contact
+  end
 end

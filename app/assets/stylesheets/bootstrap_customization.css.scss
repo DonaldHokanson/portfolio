@@ -1,1 +1,58 @@
 @import 'bootstrap';
+
+body{
+	background: #fff;
+}
+
+/* Jumbotron */
+.jumbotron{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.home{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Main */
+.home .col-sm-4, .home .col-sm-8{
+	padding: 0px;
+}
+
+.home h1{
+	padding: 100px;
+	text-align: center;
+	margin: 0px;
+}
+
+.home a{
+	text-decoration: none !important;
+}
+
+/* color palette Blue highlight on colourlovers.com */
+a{
+	color: #398ccc;
+}
+
+.home .about{
+	background-color: #bfbfbf;
+}
+
+.home .projects{
+	background-color: #919191;
+}
+
+.home .resume{
+	background-color: #6b6b6b;
+}
+
+.home .contact{
+	background-color: #575757;
+}
+
+
+
+/* Pseudo */
+

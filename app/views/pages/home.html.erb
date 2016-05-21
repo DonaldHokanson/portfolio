@@ -1,3 +1,33 @@
 <div class="jumbotron">
 	<h1>Donald Hokanson's Portfolio</h1>
 </div>
+
+<div class="container home">
+	<div class="row">
+		<%= link_to about_path do %>
+			<div class="col-sm-4 about">
+				<h1>About Me</h1>
+			</div>
+		<% end %>
+
+		<%= link_to projects_path do %>
+			<div class="col-sm-8 projects">
+				<h1>Projects</h1>
+			</div>
+		<% end %>
+	</div><!--row-->
+
+	<div class="row">
+		<%= link_to resume_path do %>
+			<div class="col-sm-8 resume">
+				<h1>Resume</h1>
+			</div>
+		<% end %>
+
+		<%= link_to contact_path do %>
+			<div class="col-sm-4 contact">
+				<h1>Contact</h1>
+			</div>
+		<% end %>
+	</div><!--row-->
+</div><!--container-->
