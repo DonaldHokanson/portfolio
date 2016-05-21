@@ -16,7 +16,10 @@ body{
 .home{
 	margin-left: auto;
 	margin-right: auto;
+	opacity: .75;
 }
+
+
 
 /* Main */
 .home .col-sm-4, .home .col-sm-8{
@@ -40,6 +43,10 @@ a{
 
 .home .about{
 	background-color: #bfbfbf;
+}
+
+.home .about:hover{
+	background-color: #bfbfbf !important;
 }
 
 .home .projects{

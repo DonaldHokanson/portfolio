@@ -1,8 +1,10 @@
 var main = function(){
+	console.log($(window).width())
 
+	if(($(window).width())>=768){
 /* .about */
 	$('.about').hover(function(){
-		$(this).stop(true,true).animate({ "right":"+=10px", "bottom":"+=10px", "opacity":".75"}, 300);
+		$(this).stop(true,true).animate({ "right":"+=10px", "bottom":"+=10px"}, 300).removeProperty("opacity");
 	}, function(){
 		$(this).stop(true,true).animate({ "right":"-=10px", "bottom":"-=10px", "opacity":"1"}, 400)
 	});
@@ -14,7 +16,7 @@ var main = function(){
 
 /* .projects */
 	$('.projects').hover(function(){
-		$(this).stop(true,true).animate({ "left":"+=10px", "bottom":"+=10px", "opacity":".75"}, 300);
+		$(this).stop(true,true).animate({ "left":"+=10px", "bottom":"+=10px", "opacity":"1.25"}, 300);
 
 	}, function(){
 		$(this).stop(true,true).animate({ "left":"-=10px", "bottom":"-=10px", "opacity":"1"}, 400)
@@ -27,7 +29,7 @@ var main = function(){
 
 /* .resume */
 	$('.resume').hover(function(){
-		$(this).stop(true,true).animate({ "right":"+=10px", "top":"+=10px", "opacity":".75"}, 300);
+		$(this).stop(true,true).animate({ "right":"+=10px", "top":"+=10px", "opacity":"1.25"}, 300);
 
 	}, function(){
 		$(this).stop(true,true).animate({ "right":"-=10px", "top":"-=10px", "opacity":"1"}, 400)
@@ -41,7 +43,7 @@ var main = function(){
 
 /* .contact */
 	$('.contact').hover(function(){
-		$(this).stop(true,true).animate({ "left":"+=10px", "top":"+=10px", "opacity":".75"}, 300);
+		$(this).stop(true,true).animate({ "left":"+=10px", "top":"+=10px", "opacity":"1.25"}, 300);
 
 	}, function(){
 		$(this).stop(true,true).animate({ "left":"-=10px", "top":"-=10px", "opacity":"1"}, 400)
@@ -49,8 +51,8 @@ var main = function(){
 
 	$('.contact').click(function(){
 		$(this).stop(true,true).animate({ "left":"-=10px", "top":"-=10px", "opacity":"1"}, 400)
-	});		
-
+	});
+};
 };
 
 $(document).ready(main)
