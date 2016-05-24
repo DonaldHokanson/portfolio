@@ -3,7 +3,8 @@ var main = function(){
 
 /* .about */
 	$('.about').hover(function(){
-		$(this).stop(true,true).animate({ "right":"+=10px", "bottom":"+=10px"}, 300).removeProperty("opacity");
+		$(this).fadeTo('fast',1);
+		$(this).stop(true,true).animate({ "right":"+=10px", "bottom":"+=10px"}, 300);
 	}, function(){
 		$(this).stop(true,true).animate({ "right":"-=10px", "bottom":"-=10px", "opacity":"1"}, 400)
 	});
