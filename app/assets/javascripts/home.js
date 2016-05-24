@@ -1,7 +1,6 @@
 var main = function(){
-	console.log($(window).width())
-
 	if(($(window).width())>=768){
+
 /* .about */
 	$('.about').hover(function(){
 		$(this).stop(true,true).animate({ "right":"+=10px", "bottom":"+=10px"}, 300).removeProperty("opacity");
@@ -52,7 +51,8 @@ var main = function(){
 	$('.contact').click(function(){
 		$(this).stop(true,true).animate({ "left":"-=10px", "top":"-=10px", "opacity":"1"}, 400)
 	});
-};
+};/* end of first argument in the if statement */
 };
 
 $(document).ready(main)
+$(document).on('page:load', main)
