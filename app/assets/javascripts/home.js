@@ -22,10 +22,12 @@ var main = function(){
 	/* .projects */
 		$('.projects').hover(function(){
 			$('.projects p').show();
+			$(this).fadeTo('fast',1);
 			$(this).stop(true,true).animate({ "left":"+=10px", "bottom":"+=10px"}, 300);
 
 		}, function(){
 			$('.projects p').hide();
+			$(this).fadeTo('slow',0.75);
 			$(this).stop(true,true).animate({ "left":"-=10px", "bottom":"-=10px"}, 400)
 		});
 
@@ -37,10 +39,12 @@ var main = function(){
 	/* .resume */
 		$('.resume').hover(function(){
 			$('.resume p').show();
+			$(this).fadeTo('fast',1);
 			$(this).stop(true,true).animate({ "right":"+=10px", "top":"+=10px"}, 300);
 
 		}, function(){
 			$('.resume p').hide();
+			$(this).fadeTo('slow',0.75);
 			$(this).stop(true,true).animate({ "right":"-=10px", "top":"-=10px"}, 400)
 		});
 
@@ -53,9 +57,11 @@ var main = function(){
 	/* .contact */
 		$('.contact').hover(function(){
 			$('.contact p').show();
+			$(this).fadeTo('fast',1);
 			$(this).stop(true,true).animate({ "left":"+=10px", "top":"+=10px"}, 300);
 		}, function(){
 			$('.contact p').hide();
+			$(this).fadeTo('slow',0.75);
 			$(this).stop(true,true).animate({ "left":"-=10px", "top":"-=10px"}, 400)
 		});
 
