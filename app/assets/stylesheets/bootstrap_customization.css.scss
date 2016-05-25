@@ -14,27 +14,24 @@ body{
 	background: #eee;
 }
 
-.home{
-	margin-left: auto;
-	margin-right: auto;
-	opacity: .75;
-}
-
-
 
 /* Main */
+
 .home .col-sm-4, .home .col-sm-8{
 	padding: 0px;
 }
 
 .home h1{
-	padding: 100px;
 	text-align: center;
-	margin: 0px;
 }
 
 .home a{
 	text-decoration: none !important;
+}
+
+.home p{
+	text-align: center;
+	display: none;
 }
 
 /* color palette Blue highlight on colourlovers.com */
@@ -42,20 +39,40 @@ a{
 	color: #398ccc;
 }
 
-.home .about{
+.about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #bfbfbf;
+	height: 200px;
+	opacity: 0.75;
 }
 
-.home .projects{
+.projects{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #919191;
+	height: 200px;
+	opacity: 0.75;
 }
 
-.home .resume{
+.resume{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #6b6b6b;
+	height: 200px;
+	opacity: 0.75;
 }
 
-.home .contact{
+.contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #575757;
+	height: 200px;
+	opacity: 0.75;
 }
 
 
