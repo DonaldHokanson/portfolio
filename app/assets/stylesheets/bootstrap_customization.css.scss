@@ -1,15 +1,19 @@
 @import 'bootstrap';
 
 body{
-	background: url("http://www.hdwallpapera.com/wp-content/uploads/wallpaper/hdwallpaperfun/wallpapers-032/Dark%20Wood%20Wallpaper%20High%20Quality%20Picture.jpg");
+	background: url("darkwood.jpg");
 	background-size: cover;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
 }
 
 /* Jumbotron */
 .jumbotron{
+	width: 1200px;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
 	color: #398ccc;
 	background: #eee;
 }
@@ -39,40 +43,53 @@ a{
 	color: #398ccc;
 }
 
-.about{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #bfbfbf;
+.tile{
 	height: 200px;
-	opacity: 0.75;
 }
 
-.projects{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #919191;
-	height: 200px;
+.about{
+	background-color: #bfbfbf;
 	opacity: 0.75;
+	transition: all ease-in-out 300ms;
+}
+
+.about:hover{
+	transform: translateX(-10px) rotate(0deg) translateY(-10px);
+	opacity: 1;
+}
+
+
+.projects{
+	background-color: #919191;
+	opacity: 0.75;
+	transition: all ease-in-out 300ms;
+}
+
+.projects:hover{
+	transform: translateX(10px) rotate(0deg) translateY(-10px);
+	opacity: 1;
 }
 
 .resume{
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #6b6b6b;
-	height: 200px;
 	opacity: 0.75;
+	transition: all ease-in-out 300ms;
+}
+
+.resume:hover{
+	transform: translateX(-10px) rotate(0deg) translateY(10px);
+	opacity: 1;
 }
 
 .contact{
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	background-color: #575757;
-	height: 200px;
 	opacity: 0.75;
+	transition: all ease-in-out 300ms;
+}
+
+.contact:hover{
+	transform: translateX(10px) rotate(0deg) translateY(10px);
+	opacity: 1;
 }
 
 
