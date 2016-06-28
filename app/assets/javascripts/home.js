@@ -1,5 +1,11 @@
 var main = function(){
 
+	// $(.tile).hover(
+	// 	function(){
+	// 		$(this).child().show();
+	// 	}, function(){
+	// 		$(this).child().hide();
+	// 	});
 
 /* .about */
 	$('.about').hover(
