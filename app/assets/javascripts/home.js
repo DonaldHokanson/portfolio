@@ -2,9 +2,9 @@ var main = function(){
 
 	// $(.tile).hover(
 	// 	function(){
-	// 		$(this).child().show();
+	// 		$(this).child('p').show();
 	// 	}, function(){
-	// 		$(this).child().hide();
+	// 		$(this).child('p').hide();
 	// 	});
 
 /* .about */
